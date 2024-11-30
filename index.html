@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Styling Catalogue</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Home Styling Catalogue</h1>
+        <p>Curated Design Options for Your Perfect Space</p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p><strong>Purpose:</strong> To simplify the design process by providing curated style options for your home.</p>
+        <p><strong>How to Use This Catalogue:</strong></p>
+        <ol>
+            <li><strong>Review:</strong> Explore the style options for each room.</li>
+            <li><strong>Select:</strong> Mark or highlight your favorites.</li>
+            <li><strong>Provide Feedback:</strong> Use the feedback form or email your preferences to [Your Email].</li>
+        </ol>
+    </section>
+
+    <section>
+        <section>
+            <h2 class="section-header">Section 1: Living Room</h2>
+            <div class="room">
+                <h3>Style</h3>
+                <div class="horizontal-scroll-container">
+                    <div class="horizontal-scroll-item" onclick=" showLivingRoomImages('living-afromin')">Afro Minimalism</div>
+                    <div class="horizontal-scroll-item" onclick=" showLivingRoomImages('living-scandinavian')">Scandinavian</div>
+                    <div class="horizontal-scroll-item" onclick=" showLivingRoomImages('living-bohemian')">Bohemian</div>
+                    <div class="horizontal-scroll-item" onclick=" showLivingRoomImages('living-eclectic')">Eclectic</div>
+                </div>
+        
+                <!-- Images for Modern Minimalist style -->
+                <div class="style-images" id="living-afromin">
+                    <img src="images\living_room\Afro-minimalist.jpg" alt="Modern Minimalist Image">
+                    <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
+                </div>
+        
+                <!-- Images for Scandinavian style -->
+                <div class="style-images" id="living-scandinavian">
+                    <img src="scandinavian1.jpg" alt="Scandinavian Style Image">
+                    <button class="select-button" onclick="openPDF('path/to/scandinavian-style.pdf')">Open PDF</button>
+                </div>
+        
+                <!-- Images for Bohemian style -->
+                <div class="style-images" id="living-bohemian">
+                    <img src="bohemian1.jpg" alt="Bohemian Style Image">
+                    <button class="select-button" onclick="openPDF('path/to/bohemian-style.pdf')">Open PDF</button>
+                </div>
+        
+                <!-- Images for Eclectic style -->
+                <div class="style-images" id="living-eclectic">
+                    <img src="eclectic1.jpg" alt="Eclectic Style Image">
+                    <button class="select-button" onclick="openPDF('path/to/eclectic-style.pdf')">Open PDF</button>
+                </div>
+            </div>      </section>      
+        <div class="room">
+            <h3>Color Palette</h3>
+            <ul>
+                <li>Neutral tones with pops of color</li>
+                <li>Earthy tones</li>
+                <li>Vibrant hues</li>
+            </ul>
+        </div>
+        <div class="room">
+            <h3>Furniture</h3>
+            <ul>
+                <li>Sofas, chairs, coffee tables</li>
+            </ul>
+        </div>
+    </section>
+
+    <section> <section>
+        <h2 class="section-header">Section 2: Bedroom (Master, Guest, Kids)</h2>
+        <div class="room">
+                <h3>Style</h3>
+                <div class="horizontal-scroll-container">
+                    <div class="horizontal-scroll-item" onclick="showBedroomImages('bed-modern')">Modern Minimalist</div>
+                    <div class="horizontal-scroll-item" onclick="showBedroomImages('bed-scandinavian')">Scandinavian</div>
+                    <div class="horizontal-scroll-item" onclick="showBedroomImages('bed-bohemian')">Bohemian</div>
+                    <div class="horizontal-scroll-item" onclick="showBedroomImages('bed-eclectic')">Eclectic</div>
+                </div>
+        
+                <!-- Images for Modern Minimalist style -->
+                <div class="style-images" id="bed-modern">
+                    <img src="images\bedroom\bed.jpg" alt="Modern Minimalist Image">
+                    <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
+                </div>
+        
+                <!-- Images for Scandinavian style -->
+                <div class="style-images" id="bed-scandinavian">
+                    <img src="scandinavian1.jpg" alt="Scandinavian Style Image">
+                    <button class="select-button" onclick="openPDF('path/to/scandinavian-style.pdf')">Open PDF</button>
+                </div>
+        
+                <!-- Images for Bohemian style -->
+                <div class="style-images" id="bed-bohemian">
+                    <img src="bohemian1.jpg" alt="Bohemian Style Image">
+                    <button class="select-button" onclick="openPDF('path/to/bohemian-style.pdf')">Open PDF</button>
+                </div>
+        
+                <!-- Images for Eclectic style -->
+                <div class="style-images" id="bed-eclectic">
+                    <img src="eclectic1.jpg" alt="Eclectic Style Image">
+                    <button class="select-button" onclick="openPDF('path/to/eclectic-style.pdf')">Open PDF</button>
+                </div>
+            </div> </section>
+        <div class="room">
+            <h3>Mattresses</h3>
+            <ul>
+                <li>Memory foam</li>
+                <li>Hybrid</li>
+                <li>Innerspring</li>
+            </ul>
+        </div>
+    </section>
+
+    <section><section>
+        <h2 class="section-header">Section 3: Dining Room</h2>
+        <div class="room">
+            <h3>Style</h3>
+            <div class="horizontal-scroll-container">
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-modern')">Modern Minimalist</div>
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-scandinavian')">Scandinavian</div>
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-bohemian')">Bohemian</div>
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-eclectic')">Eclectic</div>
+            </div>
+    
+            <!-- Images for Modern Minimalist style -->
+            <div class="style-images" id="dining-modern">
+                <img src="images\bedroom\bed.jpg" alt="Modern Minimalist Image">
+                <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
+            </div>
+    
+            <!-- Images for Scandinavian style -->
+            <div class="style-images" id="dining-scandinavian">
+                <img src="scandinavian1.jpg" alt="Scandinavian Style Image">
+                <button class="select-button" onclick="openPDF('path/to/scandinavian-style.pdf')">Open PDF</button>
+            </div>
+    
+            <!-- Images for Bohemian style -->
+            <div class="style-images" id="dining-bohemian">
+                <img src="bohemian1.jpg" alt="Bohemian Style Image">
+                <button class="select-button" onclick="openPDF('path/to/bohemian-style.pdf')">Open PDF</button>
+            </div>
+    
+            <!-- Images for Eclectic style -->
+            <div class="style-images" id="dining-eclectic">
+                <img src="eclectic1.jpg" alt="Eclectic Style Image">
+                <button class="select-button" onclick="openPDF('path/to/eclectic-style.pdf')">Open PDF</button>
+            </div>
+        </div> 
+    </section>
+
+    <section>
+        <h2 class="section-header">Section 4: Guest Room</h2>
+        <div class="room">
+            <h3>Style</h3>
+            <div class="horizontal-scroll-container">
+                <div class="horizontal-scroll-item" onclick="showOfficeImages('guest-modern')">Modern Minimalist</div>
+                <div class="horizontal-scroll-item" onclick="showOfficeImages('guest-scandinavian')">Scandinavian</div>
+                <div class="horizontal-scroll-item" onclick="showOfficeImages('guest-bohemian')">Bohemian</div>
+                <div class="horizontal-scroll-item" onclick="showOfficeImages('guest-eclectic')">Eclectic</div>
+            </div>
+    
+            <!-- Images for Modern Minimalist style -->
+            <div class="style-images" id="guest-eclectic">
+                <img src="images\bedroom\bed.jpg" alt="Modern Minimalist Image">
+                <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
+            </div>
+    
+            <!-- Images for Scandinavian style -->
+            <div class="style-images" id="guest-scandinavian">
+                <img src="scandinavian1.jpg" alt="Scandinavian Style Image">
+                <button class="select-button" onclick="openPDF('path/to/scandinavian-style.pdf')">Open PDF</button>
+            </div>
+    
+            <!-- Images for Bohemian style -->
+            <div class="style-images" id="guest-bohemian">
+                <img src="bohemian1.jpg" alt="Bohemian Style Image">
+                <button class="select-button" onclick="openPDF('path/to/bohemian-style.pdf')">Open PDF</button>
+            </div>
+    
+            <!-- Images for Eclectic style -->
+            <div class="style-images" id="guest-eclectic">
+                <img src="eclectic1.jpg" alt="Eclectic Style Image">
+                <button class="select-button" onclick="openPDF('path/to/eclectic-style.pdf')">Open PDF</button>
+            </div>
+        </div> 
+    </section>
+
+    <section>
+        <h2 class="section-header">Section 5: Feedback Form</h2>
+        <form action="#" method="POST">
+            <label for="style">Preferred Style:</label>
+            <input type="text" id="style" name="style">
+
+            <label for="color">Preferred Color Palette:</label>
+            <input type="text" id="color" name="color">
+
+            <label for="furniture">Furniture Preferences:</label>
+            <textarea id="furniture" name="furniture"></textarea>
+
+            <label for="accessories">Accessories Preferences:</label>
+            <textarea id="accessories" name="accessories"></textarea>
+
+            <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
+
+<script>
+   window.onload = function() {
+    // Call the specific functions for each section
+    showLivingRoomImages('living-afromin');  // Default Living Room style
+    showBedroomImages('bed-modern');         // Default Bedroom style
+    showDiningRoomImages('dining-scandinavian'); // Default Dining Room style
+    showOfficeImages('office-bohemian');     // Default Office style
+};
+
+// Living Room Style images function
+function showLivingRoomImages(style) {
+    // Hide all Living Room images
+    const allLivingRoomImages = document.querySelectorAll('#living-afromin, #living-modern, #living-scandinavian, #living-bohemian');
+    allLivingRoomImages.forEach(function(imageDiv) {
+        imageDiv.style.display = 'none';
+    });
+
+    // Show the selected Living Room style's image
+    const selectedLivingRoomImage = document.getElementById(style);
+    if (selectedLivingRoomImage) {
+        selectedLivingRoomImage.style.display = 'block';
+    }
+}
+
+// Bedroom Style images function
+function showBedroomImages(style) {
+    // Hide all Bedroom images
+    const allBedroomImages = document.querySelectorAll('#bed-modern, #bed-scandinavian, #bed-bohemian, #bed-eclectic');
+    allBedroomImages.forEach(function(imageDiv) {
+        imageDiv.style.display = 'none';
+    });
+
+    // Show the selected Bedroom style's image
+    const selectedBedroomImage = document.getElementById(style);
+    if (selectedBedroomImage) {
+        selectedBedroomImage.style.display = 'block';
+    }
+}
+
+// Dining Room Style images function
+function showDiningRoomImages(style) {
+    // Hide all Dining Room images
+    const allDiningRoomImages = document.querySelectorAll('#dining-afromin, #dining-modern, #dining-scandinavian, #dining-bohemian');
+    allDiningRoomImages.forEach(function(imageDiv) {
+        imageDiv.style.display = 'none';
+    });
+
+    // Show the selected Dining Room style's image
+    const selectedDiningRoomImage = document.getElementById(style);
+    if (selectedDiningRoomImage) {
+        selectedDiningRoomImage.style.display = 'block';
+    }
+}
+
+// Office Style images function
+function showOfficeImages(style) {
+    // Hide all Office images
+    const allOfficeImages = document.querySelectorAll('#office-afromin, #office-modern, #office-scandinavian, #office-bohemian');
+    allOfficeImages.forEach(function(imageDiv) {
+        imageDiv.style.display = 'none';
+    });
+
+    // Show the selected Office style's image
+    const selectedOfficeImage = document.getElementById(style);
+    if (selectedOfficeImage) {
+        selectedOfficeImage.style.display = 'block';
+    }
+}
+
+// Function to open the PDF in a new tab
+function openPDF(pdfPath) {
+    window.open(pdfPath, '_blank');
+}
+
+
+</script>
