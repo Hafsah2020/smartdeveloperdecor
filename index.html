@@ -26,7 +26,7 @@
 
     <section>
         <section>
-            <h2 class="section-header">Section 1: Living Room</h2>
+            <h2 class="section-header">Living Room</h2>
             <div class="room">
                 <h3>Style</h3>
                 <div class="horizontal-scroll-container">
@@ -62,11 +62,51 @@
             </div>      </section>      
         <div class="room">
             <h3>Color Palette</h3>
-            <ul>
-                <li>Neutral tones with pops of color</li>
-                <li>Earthy tones</li>
-                <li>Vibrant hues</li>
-            </ul>
+            <div class="horizontal-scroll-container">
+                <div class="horizontal-scroll-item" onclick="  showLivingRoomPalettes('living-palette1')">Palette 1</div>
+                <div class="horizontal-scroll-item" onclick="  showLivingRoomPalettes('living-palette2')">Palette 2</div>
+                <div class="horizontal-scroll-item" onclick="  showLivingRoomPalettes('living-palette3')">Palette 3</div>
+                <div class="horizontal-scroll-item" onclick="  showLivingRoomPalettes('living-palette4')">Palette 4</div>
+                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette5')">Palette 5</div>
+                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette6')">Palette 6</div>
+                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette7')">Palette 7</div>
+                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette8')">Palette 8</div>
+                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette9')">Palette 9</div>
+                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette10')">Palette 10</div>                
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Earthy Neutrals.JPG" alt="Modern Minimalist Image">
+                <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Coastal Breeze.JPG" alt="Modern Minimalist Image">
+                <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Urban Chic.JPG" alt="Modern Minimalist Image">
+                <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Jewel Tones.JPG" alt="Modern Minimalist Image">
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Rustic Warmth.JPG" alt="Modern Minimalist Image">
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Urban Chic.JPG" alt="Modern Minimalist Image">
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Desert Oasis.JPG" alt="Modern Minimalist Image">
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Elegant Pastels.JPG" alt="Modern Minimalist Image">
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images\living_room\Art Deco Luxe.JPG" alt="Modern Minimalist Image">
+            </div>
+            <div class="style-images" id="living-palette1">
+                <img src="images/living_room/Bohemian Vibrance.JPG" alt="Modern Minimalist Image">
+            </div>
         </div>
         <div class="room">
             <h3>Furniture</h3>
@@ -222,6 +262,7 @@
    window.onload = function() {
     // Call the specific functions for each section
     showLivingRoomImages('living-afromin');  // Default Living Room style
+    showLivingRoomPalettes('living-palette1');
     showBedroomImages('bed-modern');         // Default Bedroom style
     showDiningRoomImages('dining-scandinavian'); // Default Dining Room style
     showOfficeImages('office-bohemian');     // Default Office style
@@ -239,6 +280,20 @@ function showLivingRoomImages(style) {
     const selectedLivingRoomImage = document.getElementById(style);
     if (selectedLivingRoomImage) {
         selectedLivingRoomImage.style.display = 'block';
+    }
+}
+
+function showLivingRoomPalettes(style) {
+    // Hide all Living Room images
+    const allLivingRoomPalettes = document.querySelectorAll('#living-palette1, #living-palette2, #living-palette3, #living-palette4, #living-palette5, #living-palette6, #living-palette7, #living-palette8, #living-palette9, #living-palette10');
+    allLivingRoomPalettes.forEach(function(imageDiv) {
+        imageDiv.style.display = 'none';
+    });
+
+    // Show the selected Living Room style's image
+    const selectedLivingRoomPalette = document.getElementById(style);
+    if (selectedLivingRoomPalette) {
+        selectedLivingRoomPalette.style.display = 'block';
     }
 }
 
@@ -285,11 +340,6 @@ function showOfficeImages(style) {
     if (selectedOfficeImage) {
         selectedOfficeImage.style.display = 'block';
     }
-}
-
-// Function to open the PDF in a new tab
-function openPDF(pdfPath) {
-    window.open(pdfPath, '_blank');
 }
 
 
