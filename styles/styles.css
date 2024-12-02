@@ -126,6 +126,7 @@ input, textarea {
     display: none; /* Initially hidden */
     margin-top: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .style-images img {
