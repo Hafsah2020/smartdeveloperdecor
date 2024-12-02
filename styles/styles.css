@@ -125,6 +125,7 @@ input, textarea {
 .style-images {
     display: none; /* Initially hidden */
     margin-top: 20px;
+    text-align: center;
 }
 
 .style-images img {
@@ -133,9 +134,23 @@ input, textarea {
     margin: 10px 0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Adjust the spacing as needed */
 }
 
 /* Optional: Add some hover effects to the images */
 .style-images img:hover {
     opacity: 0.8;
 }
+
+.palette-images {
+    width: 80%; /* Occupies 80% of the screen width */
+    margin: 0 auto; /* Centers the div horizontally */
+    text-align: center; /* Centers content inside the div */
+  }
+
+  .palette-images img {
+    width: 100%; /* Ensures the image scales to fit the width of the div */
+  }
+
