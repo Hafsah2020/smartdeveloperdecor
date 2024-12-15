@@ -67,55 +67,53 @@
                         <button class="select-button">View Catalogue</button>
                     </a>                </div>
             </div>      </section>      
+      
+    </section>
+    <section><section>
+        <h2 class="section-header">Section 2: Dining Room</h2>
         <div class="room">
-            <h3>Color Palette</h3>
+            <h3>Style</h3>
             <div class="horizontal-scroll-container">
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette1')">Palette 1</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette2')">Palette 2</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette3')">Palette 3</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette4')">Palette 4</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette5')">Palette 5</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette6')">Palette 6</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette7')">Palette 7</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette8')">Palette 8</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette9')">Palette 9</div>
-                <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette10')">Palette 10</div>                
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-modern')">Modern Minimalist</div>
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-style2')">style2</div>
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-style3')">style3</div>
+                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-style4')">style4</div>
             </div>
-            <div class="palette-images" id="living-palette1">
-                <img src="images\living_room\Earthy Neutrals.JPG" alt="Modern Minimalist Image">
+    
+            <!-- Images for Modern Minimalist style -->
+            <div class="style-images" id="dining-modern">
+                <img src="images\dining\Dining style 1.png" alt="style4 Style Image">
+                <a href="https://drive.google.com/file/d/1KeX4egjxqiycYZZHrzTy43pGgATd_inO/view?usp=drive_link">
+                    <button class="select-button">View Catalogue</button>
+                </a>
             </div>
-            <div class="palette-images" id="living-palette2">
-                <img src="images\living_room\Coastal Breeze.JPG" alt="Modern Minimalist Image">
+    
+            <!-- Images for style2 style -->
+            <div class="style-images" id="dining-style2">
+                <img src="images\dining\Dining style 2.png" alt="style4 Style Image">
+                    <a href="https://drive.google.com/file/d/1bSWMipeHZxKb1OoO6nSaDGKe9QRmTvfI/view?usp=drive_link">
+                        <button class="select-button">View Catalogue</button>
+                    </a>
             </div>
-            <div class="palette-images" id="living-palette3">
-                <img src="images\living_room\Urban Chic.JPG" alt="Modern Minimalist Image">
+    
+            <!-- Images for style3 style -->
+            <div class="style-images" id="dining-style3">
+                <img src="images\dining\Dining style 3.png" alt="style4 Style Image">
+                <a href="https://drive.google.com/file/d/1MZUmPUmZhA-onNcgsa6BdPDu_mmddxLt/view?usp=drive_link">
+                    <button class="select-button">View Catalogue</button>
+                </a>
             </div>
-            <div class="palette-images" id="living-palette4">
-                <img src="images\living_room\Jewel Tones.JPG" alt="Modern Minimalist Image">
-            </div>
-            <div class="palette-images" id="living-palette5">
-                <img src="images\living_room\Rustic Warmth.JPG" alt="Modern Minimalist Image">
-            </div>
-            <div class="palette-images" id="living-palette6">
-                <img src="images\living_room\Urban Chic.JPG" alt="Modern Minimalist Image">
-            </div>
-            <div class="palette-images" id="living-palette7">
-                <img src="images\living_room\Desert Oasis.JPG" alt="Modern Minimalist Image">
-            </div>
-            <div class="palette-images" id="living-palette8">
-                <img src="images\living_room\Elegant Pastels.JPG" alt="Modern Minimalist Image">
-            </div>
-            <div class="palette-images" id="living-palette9">
-                <img src="images\living_room\Art Deco Luxe.JPG" alt="Modern Minimalist Image">
-            </div>
-            <div class="palette-images" id="living-palette10">
-                <img src="images/living_room/style3 Vibrance.JPG" alt="Modern Minimalist Image">
-            </div>
-        </div>
+    
+            <!-- Images for style4 style -->
+            <!-- <div class="style-images" id="dining-style4">
+                <img src="style41.jpg" alt="style4 Style Image">
+                <button class="select-button" onclick="openPDF('path/to/style4-style.pdf')">Open PDF</button>
+            </div> -->
+        </div> 
     </section>
 
     <section> <section>
-        <h2 class="section-header">Section 2: Master Bedroom </h2>
+        <h2 class="section-header">Section 3: Master Bedroom </h2>
         <div class="room">
                 <h3>Style</h3>
                 <div class="horizontal-scroll-container">
@@ -163,42 +161,7 @@
         </div>
     </section>
 
-    <section><section>
-        <h2 class="section-header">Section 3: Dining Room</h2>
-        <div class="room">
-            <h3>Style</h3>
-            <div class="horizontal-scroll-container">
-                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-modern')">Modern Minimalist</div>
-                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-style2')">style2</div>
-                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-style3')">style3</div>
-                <div class="horizontal-scroll-item" onclick="showDiningRoomImages('dining-style4')">style4</div>
-            </div>
     
-            <!-- Images for Modern Minimalist style -->
-            <div class="style-images" id="dining-modern">
-                <img src="images\bedroom\bed.jpg" alt="Modern Minimalist Image">
-                <button class="select-button" onclick="openPDF('path/to/modern-style.pdf')">Open PDF</button>
-            </div>
-    
-            <!-- Images for style2 style -->
-            <div class="style-images" id="dining-style2">
-                <img src="style21.jpg" alt="style2 Style Image">
-                <button class="select-button" onclick="openPDF('path/to/style2-style.pdf')">Open PDF</button>
-            </div>
-    
-            <!-- Images for style3 style -->
-            <div class="style-images" id="dining-style3">
-                <img src="style31.jpg" alt="style3 Style Image">
-                <button class="select-button" onclick="openPDF('path/to/style3-style.pdf')">Open PDF</button>
-            </div>
-    
-            <!-- Images for style4 style -->
-            <div class="style-images" id="dining-style4">
-                <img src="style41.jpg" alt="style4 Style Image">
-                <button class="select-button" onclick="openPDF('path/to/style4-style.pdf')">Open PDF</button>
-            </div>
-        </div> 
-    </section>
 
     <section>
         <h2 class="section-header">Section 4: Guest Room</h2>
@@ -235,7 +198,53 @@
                 <button class="select-button" onclick="openPDF('path/to/style4-style.pdf')">Open PDF</button>
             </div>
         </div> 
-    </section>S
+    </section>
+
+    <section>  <div class="room">
+        <h3>Color Palette</h3>
+        <div class="horizontal-scroll-container">
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette1')">Palette 1</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette2')">Palette 2</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette3')">Palette 3</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette4')">Palette 4</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette5')">Palette 5</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette6')">Palette 6</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette7')">Palette 7</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette8')">Palette 8</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette9')">Palette 9</div>
+            <div class="horizontal-scroll-item" onclick=" showLivingRoomPalettes('living-palette10')">Palette 10</div>                
+        </div>
+        <div class="palette-images" id="living-palette1">
+            <img src="images\living_room\Earthy Neutrals.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette2">
+            <img src="images\living_room\Coastal Breeze.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette3">
+            <img src="images\living_room\Urban Chic.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette4">
+            <img src="images\living_room\Jewel Tones.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette5">
+            <img src="images\living_room\Rustic Warmth.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette6">
+            <img src="images\living_room\Urban Chic.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette7">
+            <img src="images\living_room\Desert Oasis.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette8">
+            <img src="images\living_room\Elegant Pastels.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette9">
+            <img src="images\living_room\Art Deco Luxe.JPG" alt="Modern Minimalist Image">
+        </div>
+        <div class="palette-images" id="living-palette10">
+            <img src="images/living_room/style3 Vibrance.JPG" alt="Modern Minimalist Image">
+        </div>
+    </div></section>
 
 </body>
 </html>
